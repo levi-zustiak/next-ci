@@ -1,4 +1,15 @@
 import Image from "next/image";
+import { ReactNode } from "react";
+
+function FailingComponent({
+  children,
+  random,
+}: {
+  children: ReactNode;
+  random: string;
+}) {
+  return <p>{children}</p>;
+}
 
 export default function Home() {
   return (
